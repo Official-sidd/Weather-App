@@ -27,7 +27,7 @@ const WeatherApp = () => {
       shortColumnNames: "0",
     },
     headers: {
-      "X-RapidAPI-Key": "f0efc2e8f4msh2aed7ebafa44cd7p1f7151jsn5513a8ebfb5d",
+      "X-RapidAPI-Key": "Enter your API Key here", //enter API key here
       "X-RapidAPI-Host": "visual-crossing-weather.p.rapidapi.com",
     },
   };
@@ -157,7 +157,7 @@ const WeatherApp = () => {
                 flexDirection: "column",
                 flexBasis: "100%",
                 height: "100%",
-                padding: "3vh",
+                padding: "2vh",
                 justifyContent: "space-around",
               }}
             >
@@ -252,17 +252,22 @@ const WeatherApp = () => {
 
             <div
               className="middle"
-              style={{ display: "flex", flexDirection: "column", gap: 20 }}
+              style={{ display: "flex", flexDirection: "column", gap: 20}}
             >
-              <div className="searchArea">
+              <div style={{textAlign:"center"}}>
+                <h1>WeatherWise</h1>
+                {/* <h1>CloudCast</h1> */}
+              </div>
+              <div className="searchArea" style={{height:"33.33%"}}>
                 <input type="text" placeholder="Change Location"></input>
               </div>
               <div
                 className="cardsContainer"
                 style={{
                   display: "flex",
-                  height: "50%",
+                  height:"30%",
                   justifyContent: "center",
+                  alignItems:"center",
                   gap: "3vh",
                 }}
               >
@@ -270,7 +275,7 @@ const WeatherApp = () => {
                   className="cards"
                   style={{
                     width: "15vw",
-                    height: "60%",
+                    height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     padding: "2vh",
@@ -295,7 +300,7 @@ const WeatherApp = () => {
                   className="cards"
                   style={{
                     width: "15vw",
-                    height: "60%",
+                    height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     padding: "2vh",
@@ -322,7 +327,7 @@ const WeatherApp = () => {
                   className="cards"
                   style={{
                     width: "15vw",
-                    height: "60%",
+                    height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     padding: "2vh",
